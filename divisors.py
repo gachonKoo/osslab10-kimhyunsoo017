@@ -2,8 +2,9 @@ import sys
 
 number = int(sys.argv[1])
 
+divs = []
 for i in range(1, number + 1):
     if number % i == 0:
-        print(i, end=" ")
+        divs.append(str(i))
 
-print()
+print(" ".join(divs))
