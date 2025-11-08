@@ -1,5 +1,11 @@
 def divisors(n):
-    return [i for i in range(1, n + 1) if n % i == 0]
+    result = []
+    for i in range(1, n + 1):
+        if n % i == 0:
+            result.append(i)
+    return result
 
 if __name__ == "__main__":
-    print(divisors(12))
+    n = int(input())
+    for d in divisors(n):
+        print(d)
