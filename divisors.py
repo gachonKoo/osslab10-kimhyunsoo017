@@ -1,9 +1,8 @@
-import sys
+n = int(input().strip())
 
-number = int(sys.argv[1])  
+ans = []
+for i in range(1, n + 1):
+    if n % i == 0:
+        ans.append(str(i))
 
-for i in range(1, number + 1):  
-    if number % i == 0:        
-        print(i, end=" ")       
-
-print()  
+print(' '.join(ans))
