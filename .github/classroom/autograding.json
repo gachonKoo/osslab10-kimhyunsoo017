@@ -1,0 +1,13 @@
+{
+  "tests": [
+    {
+      "name": "divisors.py test",
+      "setup": "",
+      "run": "python3 divisors.py",
+      "input": "12\n",
+      "output": "1 2 3 4 6 12\n",
+      "comparison": "exact",
+      "timeout": 10
+    }
+  ]
+}
